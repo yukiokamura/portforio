@@ -1,0 +1,37 @@
+.menu{
+  margin: fs(30);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  h1{
+    font-size: fs(30);
+    letter-spacing: .1em;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .list{
+    list-style: none;
+    margin-top: fs(30);
+    line-height: 1;
+    letter-spacing: .05em;
+    font-size: fs(15);
+    li + li{
+      margin-top: fs(10);
+    }
+  }
+  h2{
+    font-size: fs(20);
+    margin-top: fs(30);
+    font-weight: 400;
+    letter-spacing: .05em;
+  }
+  .link{
+    cursor: pointer;
+  }
+  .copyright{
+    font-size: fs(10);
+    margin-top: fs(60);
+    letter-spacing: .05em;
+  }
+}

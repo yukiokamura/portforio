@@ -1,5 +1,5 @@
 export const config = {
-  is_mediaquery : false,
+  is_mediaquery : true,
   is_release : false,
-  is_stats : true
+  is_stats : false
 }

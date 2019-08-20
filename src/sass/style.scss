@@ -1,2 +1,72 @@
 @import "common/reset.scss";
 @import "common/common";
+
+
+@import "layouts/menu";
+
+.canvas{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: #fff;
+}
+
+
+footer{
+  position: absolute;
+  height: fs(30);
+  width: auto;
+  margin: 0 fs(30);
+  align-items: center;
+
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  a{
+    display: block;
+    color: inherit;
+    font-size: fs(15);
+    text-decoration: none;
+  }
+  a + a{
+    margin-left: fs(15);
+  }
+  svg{
+    width: auto;
+    height: fs(15);
+  }
+}
+
+.mouse{
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  width: fs(20);
+  height: fs(20);
+  background-color: #fff;
+  mix-blend-mode:difference;
+  pointer-events: none;
+  transform: scale(0);
+  text-align: center;
+  // overflow: hidden;
+  .txt{
+    position: absolute;
+    color: #fff;
+    top: fs(10) - fs(6);
+    font-size: fs(12);
+    left: fs(30);
+    height: fs(12);
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    span{
+      display: inline-block;
+      transform: translateY(110%);
+    }
+  }
+}

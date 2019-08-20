@@ -2,4 +2,20 @@ html,body{
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "palt";
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Vollkorn', serif;
+  color: #2e2e2e;
+}
+.wrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+@function fs($point) {
+  @return ($point/10) * 1rem;
 }

@@ -27,7 +27,7 @@ module.exports = {
   },
   devtool: enabledSourceMap  ? 'inline-source-map' : '',
   output:{
-    path:__dirname+'/dist/assets/js',
+    path:__dirname+'/docs/assets/js',
     filename:'[name].js'
   },
   module: {

@@ -4,17 +4,50 @@ var absolutePath = filename.split(site.developDir)[filename.split(site.developDi
 var relativePath = '../'.repeat([absolutePath.split('/').length -1]);
 %>
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="touch">
+<html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ykokmr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="description">
     <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css?<%=Math.random()%>">
     <script src='assets/js/lib.js' defer></script>
     <script src="assets/js/app.js?<%=Math.random()%>" defer></script>
   </head>
   <body>
+    <div class="wrap">
+      <aside class="menu">
+        <h1>ykokmr</h1>
+        <ul class="list">
+          <li>1993/June/28</li>
+          <li>Tokyo</li>
+          <li>Front-end engineer</li>
+        </ul>
+        <h2>playground</h2>
+        <ul class="list hover" data-key="bg">
+          <li class="link" data-href="">mozi</li>
+          <li class="link" data-href="">glich</li>
+        </ul>
+        <p class="copyright">©︎2019 yukiokamura</p>
+      </aside>
+      <div class="canvas"></div>
+      <footer>
+        <a href="https://www.facebook.com/yuuki.okamura.54" target="_blank">
+          <%-include('../docs/assets/img/icon/facebook.svg');%>
+        </a>
+        <a href="https://github.com/yukiokamura" target="_blank">
+          <%-include('../docs/assets/img/icon/github.svg');%>
+        </a>
+        <a href="https://github.com/yukiokamura/portforio" target="_blank">
+          this src
+        </a>
+      </footer>
+      <div class="mouse">
+        <span></span>
+        <p class="txt1 txt">change bg</p>
+      </div>
+    </div>
   </body>
 </html>

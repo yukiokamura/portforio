@@ -8,7 +8,7 @@
     "dev:webpack": "webpack --development",
     "dev:watch": "webpack --watch",
     "dev:gulp": "gulp",
-    "release": "gulp release"
+    "release": "webpack --production & gulp release"
   },
   "repository": {
     "type": "git",

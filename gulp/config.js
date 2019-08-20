@@ -2,7 +2,7 @@
 
 *******************/
 
-var dest = './dist';
+var dest = './docs';
 var src = './src';
 
 var path = require('path');
